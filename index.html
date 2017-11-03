@@ -16,15 +16,15 @@
   <div class="color blue" id="blue"></div>
 </div>
 <script>
-  $('#green').click(function(){
-    $('#texte').css('color', 'green');
-  })
-  $('#red').click(function(){
-    $('#texte').css('color', 'red');
-  })
-  $('#blue').click(function(){
-    $('#texte').css('color', 'blue');
-  })
+$(function(){
+  $('.color').click(function(){
+    //attr pour récupéré l'id
+    divColor = $(this).attr('id');
+    $('#texte').css('color', divColor);
+  });
+});
+//Nom de la classe .color...
+
 </script>
 </body>
 </html>
